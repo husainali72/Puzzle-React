@@ -1,0 +1,29 @@
+.description {
+  color: #fff;
+  font-size: 1.33em;
+  flex: 0 0 100%; }
+  .description .timer {
+    vertical-align: baseline;
+    display: inline-block;
+    width: 1.3em;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold; }
+
+.pieceHolder {
+  position: absolute;
+  transition: all .33s;
+  transition-timing-function: ease;
+  z-index: 10; }
+  .pieceHolder.draggable {
+    transition: all .1s;
+    cursor: pointer; }
+  .pieceHolder.on-position {
+    transition: none;
+    z-index: 0;
+    cursor: default;
+    opacity: .75; }
+    .complete .pieceHolder.on-position {
+      opacity: 1; }
+  .pieceHolder.drugged {
+    z-index: 100; }

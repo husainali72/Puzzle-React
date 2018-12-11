@@ -1,0 +1,45 @@
+@import "../../scss/mixins.scss";
+
+.Result {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .box {
+    border: 10px solid #895b3a;
+    background: #a27754;
+    width: 800px;
+    padding: 1em 2em 1.5em;
+  }
+
+  .description {
+    color: #fff;
+    font-size: 1.33em;
+    flex: 0 0 100%;
+  }
+  .field {
+    color: #fff;
+    font-size: 1.33em;
+    line-height: 2.5;
+    margin: 0;
+    text-align: left;
+    white-space: nowrap;
+
+    .label {
+      display: inline-block;
+      padding: 0 .5em;
+      text-align: right;
+      width: 50%;
+    }
+  }
+
+  .buttons {
+    flex: 0 0 100%;
+    @include buttons();
+
+    .button {
+      @include button();
+    }
+  }
+}

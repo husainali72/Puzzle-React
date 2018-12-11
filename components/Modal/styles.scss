@@ -1,0 +1,66 @@
+@import "../../scss/variables.scss";
+@import "../../scss/mixins.scss";
+
+.blanket {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(#13202e, .75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1000;
+
+  .holder {
+    align-self: center;
+    position: relative;
+  }
+
+  .fieldset {
+    width: 500px;
+    background: #6c9bc9;
+    padding: 2em;
+
+    .email {
+      width: 100%;
+      font-size: 1.33em;
+      padding: .5em .75em;
+    }
+  }
+  .buttons {
+    padding: 1em 0;
+  }
+  .button {
+    @include button();
+    background: $button-modal-bg;
+    &:hover {
+      background: $button-modal-hover-bg;
+    }
+  }
+
+  .close {
+    display: inline-block;
+    background: transparent;
+    border: none;
+    margin: 0;
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+
+    &:hover {
+      background: rgba(255, 255, 255, .25);
+    }
+
+    &:before {
+      display: inline-block;
+      content: '\00D7';
+      text-indent: 0;
+      font: 2em/1 serif;
+    }
+  }
+}

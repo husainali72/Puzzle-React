@@ -1,0 +1,29 @@
+@import "../../scss/variables.scss";
+@import "../../scss/mixins.scss";
+
+.selector {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .select {
+    border: 10px solid #895b3a;
+    background: #a27754;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: #fff;
+    text-decoration: none;
+    min-width: 100px;
+    min-height: 100px;
+    margin: .3em .5em .6em;
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+      border-color: #fff;
+    }
+  }
+}

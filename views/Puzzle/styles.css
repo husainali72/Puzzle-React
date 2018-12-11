@@ -1,0 +1,51 @@
+.description {
+  color: #fff;
+  font-size: 1.33em;
+  flex: 0 0 100%; }
+  .description .timer {
+    vertical-align: baseline;
+    display: inline-block;
+    width: 1.3em;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold; }
+
+.Puzzle .play-ground {
+  position: relative;
+  text-align: center;
+  width: 800px;
+  height: 800px;
+  background-color: #4782bb; }
+
+.Puzzle .buttons {
+  margin: 0;
+  padding: 1em 0;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  left: 0; }
+  .Puzzle .buttons .button {
+    margin-top: -50%;
+    display: inline-block;
+    padding: .33em 1em;
+    text-decoration: none;
+    background: #91b4d7;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 1.33em;
+    cursor: pointer;
+    margin: 0 .5em;
+    min-width: 10em; }
+    .Puzzle .buttons .button:hover {
+      background: #4782bb; }
+
+.svg-defs {
+  position: absolute;
+  width: 0;
+  height: 0;
+  /*
+  path {
+    stroke-width:.3;
+    stroke: red;
+  }
+  */ }

@@ -1,0 +1,11 @@
+$page-bg: #6c9bc9;
+$fonts-path: "/fonts/";
+
+$button-bg: lighten($page-bg, 10%);
+$button-hover-bg: darken($button-bg, 20%);
+$button-modal-bg: darken($page-bg, 25%);
+$button-modal-hover-bg: lighten($button-modal-bg, 15%);
+
+$select-size: 100px;
+$select-height: $select-size;
+$select-width: $select-size;

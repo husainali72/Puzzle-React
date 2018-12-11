@@ -1,0 +1,33 @@
+.description {
+  color: #fff;
+  font-size: 1.33em;
+  flex: 0 0 100%; }
+  .description .timer {
+    vertical-align: baseline;
+    display: inline-block;
+    width: 1.3em;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold; }
+
+.selector {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .selector .select {
+    border: 10px solid #895b3a;
+    background: #a27754;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: #fff;
+    text-decoration: none;
+    min-width: 100px;
+    min-height: 100px;
+    margin: .3em .5em .6em;
+    position: relative;
+    cursor: pointer; }
+    .selector .select:hover {
+      border-color: #fff; }

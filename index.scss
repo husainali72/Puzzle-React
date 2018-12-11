@@ -1,0 +1,39 @@
+@import "./scss/variables.scss";
+
+@font-face {
+  font-family: 'sofia_prolight';
+  src: url($fonts-path + 'SofiaProLight-webfont.eot');
+  src: url($fonts-path + 'SofiaProLight-webfont.eot?#iefix') format('embedded-opentype'),
+  url($fonts-path + 'SofiaProLight-webfont.woff2') format('woff2'),
+  url($fonts-path + 'SofiaProLight-webfont.woff') format('woff'),
+  url($fonts-path + 'SofiaProLight-webfont.ttf') format('truetype'),
+  url($fonts-path + 'SofiaProLight-webfont.svg#sofia_prolight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'sofia_prolight', sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: $page-bg;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

@@ -1,0 +1,55 @@
+.description {
+  color: #fff;
+  font-size: 1.33em;
+  flex: 0 0 100%; }
+  .description .timer {
+    vertical-align: baseline;
+    display: inline-block;
+    width: 1.3em;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold; }
+
+.Result {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .Result .box {
+    border: 10px solid #895b3a;
+    background: #a27754;
+    width: 800px;
+    padding: 1em 2em 1.5em; }
+  .Result .description {
+    color: #fff;
+    font-size: 1.33em;
+    flex: 0 0 100%; }
+  .Result .field {
+    color: #fff;
+    font-size: 1.33em;
+    line-height: 2.5;
+    margin: 0;
+    text-align: left;
+    white-space: nowrap; }
+    .Result .field .label {
+      display: inline-block;
+      padding: 0 .5em;
+      text-align: right;
+      width: 50%; }
+  .Result .buttons {
+    flex: 0 0 100%;
+    margin: 0;
+    padding: 1em 0; }
+    .Result .buttons .button {
+      display: inline-block;
+      padding: .33em 1em;
+      text-decoration: none;
+      background: #91b4d7;
+      border: 1px solid #fff;
+      color: #fff;
+      font-size: 1.33em;
+      cursor: pointer;
+      margin: 0 .5em;
+      min-width: 10em; }
+      .Result .buttons .button:hover {
+        background: #4782bb; }

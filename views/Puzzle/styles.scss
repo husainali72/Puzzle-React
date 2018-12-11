@@ -1,0 +1,39 @@
+@import "../../scss/variables.scss";
+@import "../../scss/mixins.scss";
+
+.Puzzle {
+
+  .play-ground {
+    position: relative;
+    text-align: center;
+    width: 800px;
+    height: 800px;
+    background-color: $button-hover-bg;
+  }
+
+  .buttons {
+    @include buttons();
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 0;
+
+    .button {
+      margin-top: -50%;
+      @include button();
+    }
+  }
+}
+
+.svg-defs {
+  position: absolute;
+  width: 0;
+  height: 0;
+
+  /*
+  path {
+    stroke-width:.3;
+    stroke: red;
+  }
+  */
+}

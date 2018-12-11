@@ -1,0 +1,30 @@
+@import "../../scss/variables.scss";
+@import "../../scss/mixins.scss";
+
+.pieceHolder {
+  position: absolute;
+  transition: all .33s;
+  transition-timing-function: ease;
+  z-index: 10;
+
+  &.draggable {
+    transition: all .1s;
+    cursor: pointer;
+  }
+
+  &.on-position {
+    transition: none;
+    z-index: 0;
+    cursor: default;
+    opacity: .75;
+
+    .complete & {
+      opacity: 1;
+    }
+  }
+
+  &.drugged {
+    z-index: 100;
+  }
+}
+

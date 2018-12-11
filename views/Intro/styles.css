@@ -1,0 +1,23 @@
+.description {
+  color: #fff;
+  font-size: 1.33em;
+  flex: 0 0 100%; }
+  .description .timer {
+    vertical-align: baseline;
+    display: inline-block;
+    width: 1.3em;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold; }
+
+.Intro {
+  text-align: center;
+  width: 50%; }
+  .Intro .selector {
+    min-width: 100px;
+    min-height: 100px; }
+    .Intro .selector .select {
+      padding: 0 .5em; }
+      .Intro .selector .select .label {
+        font-weight: bold;
+        font-size: 4em; }
